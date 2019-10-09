@@ -1,0 +1,6 @@
+<view class="header">
+  <image class="logo" src="{{url.logo}}"></image>
+  <text>scratch</text>
+  <image class="notification" src="{{url.notification}}"></image>
+  <image class="message" src="{{url.message}}"></image>
+</view>
