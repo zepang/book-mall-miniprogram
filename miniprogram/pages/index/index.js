@@ -36,6 +36,10 @@ Page({
     })
   },
 
+  onShow: function () {
+    console.log(this.getTabBar)
+  },
+
   onGetUserInfo: function(e) {
     if (!this.logged && e.detail.userInfo) {
       this.setData({
