@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    tabIndex: 0,
     url: {
       logo: '../../images/Logo.png',
       notification: '../../images/Notifications.png',
@@ -155,6 +156,15 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  /**
+   * 自定义事件
+   */
+  switchTab: function (data) {
+    this.setData({
+      tabIndex: data.detail
+    })
   }
 })
 

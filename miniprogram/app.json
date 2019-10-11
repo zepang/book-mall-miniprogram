@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/home/home",
+    "pages/index/index",
     "pages/chooseLib/chooseLib",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
@@ -15,33 +15,6 @@
     "navigationBarBackgroundColor": "#F6F6F6",
     "navigationBarTitleText": "Scratch",
     "navigationBarTextStyle": "black"
-  },
-  "tabBar": {
-    "custom": true,
-    "color": "#7A7E83",
-    "selectedColor": "#3cc51f",
-    "borderStyle": "black",
-    "backgroundColor": "#ffffff",
-    "list": [
-      {
-        "pagePath": "pages/index/index",
-        "iconPath": "./images/Nav-2.png",
-        "selectedIconPath": "./images/Nav-2_active.png"
-      },
-      {
-        "pagePath": "pages/home/home",
-        "iconPath": "./images/Nav-1.png",
-        "selectedIconPath": "./images/Nav-1_active.png"
-      },
-      {
-        "pagePath": "pages/chooseLib/chooseLib",
-        "iconPath": "./images/Nav-3.png",
-        "selectedIconPath": "./images/Nav-3_active.png"
-      }
-    ]
-  },
-  "usingComponents": {
-    "custom-tab-bar": "./custom-tab-bar/index"
   },
   "sitemapLocation": "sitemap.json"
 }
