@@ -1,0 +1,8 @@
+<!--components/recipes/index.wxml-->
+<view class="recipe-list">
+  <block wx:for="{{list}}" wx:key="{{index}}">
+    <view class="recipe-card__wrapper">
+      <recipe-card data="{{item}}"></recipe-card>
+    </view>
+  </block>
+</view>

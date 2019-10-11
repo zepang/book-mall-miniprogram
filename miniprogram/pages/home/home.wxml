@@ -1,22 +1,26 @@
 <!--miniprogram/pages/home/home.wxml-->
 <!-- <text>miniprogram/pages/home/home.wxml</text> -->
-<import src="./templates/feed-card/feed-card.wxml"></import>
-<block wx:if="{{tabIndex === 0}}">
-  <view class="page">
-    <include src="./templates/header.wxml"></include>
-    <view class="feed-list">
-      <view wx:for="{{list}}" wx:key="{{index}}" class="card">
-        <template is="feed-card" data="{{item}}"></template>
-      </view>
+<view class="page">
+  <block wx:if="{{tabIndex === 0}}">
+    <text>0</text>
+  </block>
+
+  <block wx:elif="{{tabIndex === 1}}">
+    <view class="header">
+      <image class="logo" src="{{url.logo}}"></image>
+      <text>scratch</text>
+      <image class="notification" src="{{url.notification}}"></image>
+      <image class="message" src="{{url.message}}"></image>
     </view>
-  </view>
-</block>
-<block wx:elif="{{tabIndex === 1}}">
-  <text>1</text>
-</block>
-<block wx:else="{{tabIndex === 2}}">
-  <text>2</text>
-</block>
+
+    <recipe-list></recipe-list>
+  </block>
+
+  <block wx:else="{{tabIndex === 2}}">
+    <text>2</text>
+  </block>
+</view>
+
 
 <tab-bar bind:switch-tab="switchTab" selected="{{tabIndex}}"></tab-bar>
 

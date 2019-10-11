@@ -8,14 +8,14 @@ Component({
   data: {
     list: [
       {
-        "pagePath": "/pages/index/index",
-        "iconPath": "/images/Nav-2.png",
-        "selectedIconPath": "/images/Nav-2_active.png"
-      },
-      {
         "pagePath": "/pages/home/home",
         "iconPath": "/images/Nav-1.png",
         "selectedIconPath": "/images/Nav-1_active.png"
+      },
+      {
+        "pagePath": "/pages/index/index",
+        "iconPath": "/images/Nav-2.png",
+        "selectedIconPath": "/images/Nav-2_active.png"
       },
       {
         "pagePath": "/pages/chooseLib/chooseLib",

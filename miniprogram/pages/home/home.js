@@ -5,74 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-    tabIndex: 0,
+    tabIndex: 1,
     url: {
       logo: '../../images/Logo.png',
       notification: '../../images/Notifications.png',
       message: '../../images/Messages.png',
-    },
-    list: [
-      { 
-        id: 1,
-        user: {
-          name: 'Profile name',
-          avatar: '../../images/avatar.png'
-        },
-        content: {
-          title: 'White Wine Toffee',
-          cover: '../../images/feed-card-cover.png',
-          desc: 'Apparently we had reached a great height in the atmosphere, for the sky was …'
-        },
-        meta: {
-          like: {
-            count: 5, 
-            icon: '../../../../../images/Like.png'
-          },
-          comments: 8,
-          publishedAt: '5 day ago'
-        }
-      },
-      { 
-        id: 2,
-        user: {
-          name: 'Profile name',
-          avatar: '../../images/avatar.png'
-        },
-        content: {
-          title: 'White Wine Toffee',
-          cover: '../../images/feed-card-cover.png',
-          desc: 'Apparently we had reached a great height in the atmosphere, for the sky was …'
-        },
-        meta: {
-          like: {
-            count: 5, 
-            icon: '../../../../../images/Like.png'
-          },
-          comments: 8,
-          publishedAt: '5 day ago'
-        }
-      },
-      { 
-        id: 3,
-        user: {
-          name: 'Profile name',
-          avatar: '../../images/avatar.png'
-        },
-        content: {
-          title: 'White Wine Toffee',
-          cover: '../../images/feed-card-cover.png',
-          desc: 'Apparently we had reached a great height in the atmosphere, for the sky was …'
-        },
-        meta: {
-          like: {
-            count: 5, 
-            icon: '../../../../../images/Like.png'
-          },
-          comments: 8,
-          publishedAt: '5 day ago'
-        }
-      }
-    ]
+    }
   },
 
   /**
@@ -167,4 +105,3 @@ Page({
     })
   }
 })
-
