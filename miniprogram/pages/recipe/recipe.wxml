@@ -1,0 +1,21 @@
+<!--miniprogram/pages/recipe/recipe.wxml-->
+<view class="page">
+  <view class="header">
+    <view class="mask"></view>
+    <view class="nav">
+      <image src="/images/Back-white.png"></image>
+      <text>Back to My Profile</text>
+    </view>
+    <image class="cover" src="/images/recipe-cover.png" mode="center left"></image>
+    <view class="title">
+      <text>Engine-Cooked Honey Orange Pancake</text>
+    </view>
+  </view>
+  <view class="body">
+    <view class="image-list">
+      <image src="/images/recipe-step.png"></image>
+      <image src="/images/recipe-step.png"></image>
+      <image src="/images/recipe-step.png"></image>
+    </view>
+  </view>
+</view>

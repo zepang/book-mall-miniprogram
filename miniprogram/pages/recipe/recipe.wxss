@@ -1,0 +1,62 @@
+/* miniprogram/pages/recipe/recipe.wxss */
+
+.header {
+  position: relative;
+  height: 716rpx;
+}
+
+.header .nav {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 40rpx;
+  top: 40rpx;
+  height: 40rpx;
+}
+
+.header .nav image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.header .nav text {
+  color: #ffffff;
+  font-size: 28rpx;
+}
+
+.header .cover {
+  height: 100%;
+  width: 100%;
+}
+
+.header .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.header .title {
+  position: absolute;
+  left: 60rpx;
+  bottom: 60rpx;
+  color: #ffffff;
+  font-size: 48rpx;
+  line-height: 64rpx;
+}
+
+.body .image-list {
+  padding: 40rpx;
+}
+
+.body .image-list image {
+  width: 206rpx;
+  height: 188rpx;
+  display: inline-block;
+}
+
+.body .image-list image:not(:last-child) {
+  margin-right: 20rpx;
+}
