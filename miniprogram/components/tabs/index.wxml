@@ -1,9 +1,16 @@
 <!--components/tabs/index.wxml-->
 <view class="tabs">
   <view class="header">
-    
+    <view class="title"
+      wx:for="{{tabs}}"
+      wx:key="{{index}}"
+      data-index="{{index}}"
+      style="{{index === active ? 'background-color: #eee' : ''}}"
+      bind:tap="handleChangeTab">
+      {{item.title}}
+    </view>
   </view>
   <view class="body">
-  
+    <slot></slot>
   </view>
 </view>

@@ -60,3 +60,8 @@
 .body .image-list image:not(:last-child) {
   margin-right: 20rpx;
 }
+
+.tab-container {
+  padding: 40rpx;
+  border-top: 1px solid #eee;
+}

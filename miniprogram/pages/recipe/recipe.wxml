@@ -18,12 +18,16 @@
       <image src="/images/recipe-step.png"></image>
     </view>
   </view>
-  <van-tabs active="{{active}}">
-    <van-tab title="Ingredients">
-      Ingredients
-    </van-tab>
-    <van-tab title="How to Cook">
-      How to Cook
-    </van-tab>
-  </van-tabs>
+  <tabs>
+    <tab title="Ingredients">
+      <view class="tab-container">
+        <text>tab1内容</text>
+      </view>
+    </tab>
+    <tab title="How to Cook">
+      <view class="tab-container">
+        <text>tab2内容</text>
+      </view>
+    </tab>
+  </tabs>
 </view>

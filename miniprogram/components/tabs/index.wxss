@@ -1,1 +1,12 @@
 /* components/tabs/index.wxss */
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header .title {
+  flex: 1;
+  padding: 10rpx 0;
+  text-align: center;
+}
