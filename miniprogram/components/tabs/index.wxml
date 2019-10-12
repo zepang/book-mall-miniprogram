@@ -1,0 +1,9 @@
+<!--components/tabs/index.wxml-->
+<view class="tabs">
+  <view class="header">
+    
+  </view>
+  <view class="body">
+  
+  </view>
+</view>

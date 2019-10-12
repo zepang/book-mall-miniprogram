@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "tabs": "/components/tabs/index",
+    "van-tabs": "/miniprogram_npm/vant-weapp/tabs/index",
+    "van-tab": "/miniprogram_npm/vant-weapp/tab/index"
+  }
 }
