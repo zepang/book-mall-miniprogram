@@ -21,12 +21,22 @@
   <tabs>
     <tab title="Ingredients">
       <view class="tab-container">
-        <text>tab1内容</text>
+        <view class="ingredient-list">
+          <view class="ingredient" wx:for="{{6}}">
+            <image src="/images/recipe-step.png"></image>
+            <text>1/2 cup whole milk</text>
+          </view>
+        </view>
       </view>
     </tab>
     <tab title="How to Cook">
       <view class="tab-container">
-        <text>tab2内容</text>
+        <view class="step-list">
+          <view class="step" wx:for="{{6}}">
+            <image src="/images/recipe-step.png"></image>
+            <text>1/2 cup whole milk</text>
+          </view>
+        </view>
       </view>
     </tab>
   </tabs>
