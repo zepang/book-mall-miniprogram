@@ -125,33 +125,72 @@
   height: 60rpx;
   border-radius: 10rpx;
   margin-bottom: 20rpx;
+  margin-right: 40rpx;
 }
 
 .comment .info {
   flex: 1;
+  position: relative;
   display: flex;
   flex-direction: column;
-  padding: 0 30rpx;
+  padding: 20rpx 30rpx 20rpx 0;
+  border-radius: 8rpx;
   font-size: 28rpx;
+  background-color: #E6E6E6;
 }
 
-.comment .info text.name {
-  font-size: 24rpx;
-  height: 24rpx;
-  line-height: 24rpx;
+.comment .info:before {
+  content: '';
+  display: block;
+  position: absolute;
+  border-top: 10rpx solid transparent;
+  border-bottom: 10rpx solid transparent;
+  border-right: 30rpx solid #E6E6E6;
+  left: -25rpx;
+  top: 16rpx;
 }
 
 .comment .info text.content {
-  margin-top: 20rpx;
   margin-bottom: 20rpx;
   flex: 1;
   padding-left: 20rpx;
   border-left: 1px solid #eee;
+  font-size: 30rpx;
 }
 
 .comment .info .time {
   padding-left: 20rpx;
   font-size: 24rpx;
   color: rgb(136, 135, 135);
+}
+
+.additional-info {
+  margin: 40rpx;
+  padding: 40rpx;
+  border-radius: 20rpx;
+  border: 8rpx dashed rgb(150, 250, 84);
+}
+
+.additional-info .title {
+  margin-bottom: 30rpx;
+}
+
+.additional-info .row {
+  display: flex;
+  margin-bottom: 20rpx;
+}
+
+.additional-info .row .label {
+  min-width: 240rpx;
+  font-size: 28rpx;
+}
+
+.additional-info .row .content {
+  flex: 1;
+  font-size: 28rpx;
+}
+
+.additional-info .row .content view {
+  margin-bottom: 10rpx;
 }
 

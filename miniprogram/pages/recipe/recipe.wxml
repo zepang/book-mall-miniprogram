@@ -41,16 +41,38 @@
     </tab>
   </tabs>
 
+  <view class="additional-info">
+    <view class="title">Addition-info</view>
+    <view class="row">
+      <view class="label">Seving Time</view>
+      <view class="content">12Mins</view>
+    </view>
+    <view class="row">
+      <view class="label">Nutrition Facts</view>
+      <view class="content">
+        <view>222 calories</view>
+        <view>6.2 g fat</view>
+        <view>7.2 g carbohydrates</view>
+        <view>28.6 g protein</view>
+        <view>68 mg cholesterol</view>
+        <view>268 mg sodium</view>
+      </view>
+    </view>
+    <view class="row">
+      <view class="label">Tags</view>
+      <view class="content">Sweet, Coconut, Quick, Easy, Homemade</view>
+    </view>
+  </view>
+
   <view class="comments">
     <view class="line">
       <text>comments</text>
     </view>
-    <view class="comment">
+    <view class="comment" wx:for="{{5}}" wx:key="{{index}}">
       <view class="user">
         <image src="/images/recipe-step.png"></image>
       </view>
       <view class="info">
-        <text class="name">profile name</text>
         <text class="content">oh! It's so good.</text>
         <text class="time">2019-10-14 12:02</text>
       </view>
