@@ -4,7 +4,7 @@
     <view class="mask"></view>
     <view class="nav">
       <image src="/images/Back-white.png"></image>
-      <text>Back to My Profile</text>
+      <text bind:tap="navBack">Back to My Profile</text>
     </view>
     <image class="cover" src="/images/recipe-cover.png" mode="center left"></image>
     <view class="title">
