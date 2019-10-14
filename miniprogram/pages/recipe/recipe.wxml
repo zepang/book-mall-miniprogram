@@ -22,7 +22,7 @@
     <tab title="Ingredients">
       <view class="tab-container">
         <view class="ingredient-list">
-          <view class="ingredient" wx:for="{{6}}">
+          <view class="ingredient" wx:for="{{6}}" wx:key="{{index}}">
             <image src="/images/recipe-step.png"></image>
             <text>1/2 cup whole milk</text>
           </view>
@@ -32,7 +32,7 @@
     <tab title="How to Cook">
       <view class="tab-container">
         <view class="step-list">
-          <view class="step" wx:for="{{6}}">
+          <view class="step" wx:for="{{6}}" wx:key="{{index}}">
             <image src="/images/recipe-step.png"></image>
             <text>1/2 cup whole milk</text>
           </view>
@@ -40,4 +40,20 @@
       </view>
     </tab>
   </tabs>
+
+  <view class="comments">
+    <view class="line">
+      <text>comments</text>
+    </view>
+    <view class="comment">
+      <view class="user">
+        <image src="/images/recipe-step.png"></image>
+      </view>
+      <view class="info">
+        <text class="name">profile name</text>
+        <text class="content">oh! It's so good.</text>
+        <text class="time">2019-10-14 12:02</text>
+      </view>
+    </view>
+  </view>
 </view>

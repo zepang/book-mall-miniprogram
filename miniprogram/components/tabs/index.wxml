@@ -5,12 +5,14 @@
       wx:for="{{tabs}}"
       wx:key="{{index}}"
       data-index="{{index}}"
-      style="{{index === active ? 'background-color: #eee' : ''}}"
+      style="{{index === active ? 'background-color: #30BE76; color: azure;' : ''}}"
       bind:tap="handleChangeTab">
       {{item.title}}
     </view>
   </view>
   <view class="body">
-    <slot></slot>
+    <view class="slide-wrapper" style="{{slideWrapperStyle}}">
+      <slot></slot>
+    </view>
   </view>
 </view>

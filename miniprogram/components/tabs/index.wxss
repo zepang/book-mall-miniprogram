@@ -1,5 +1,9 @@
 /* components/tabs/index.wxss */
 
+.tabs {
+  overflow: hidden;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -10,4 +14,6 @@
   padding: 10rpx 0;
   text-align: center;
   font-size: 32rpx;
+  border-top-right-radius: 12rpx;
+  border-top-left-radius: 12rpx;
 }

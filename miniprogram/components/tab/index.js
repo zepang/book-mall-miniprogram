@@ -19,7 +19,8 @@ Component({
    * 组件的初始数据
    */
   data: {
-    active: false
+    active: false,
+    width: 'auto'
   },
 
   /**

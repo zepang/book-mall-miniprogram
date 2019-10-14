@@ -1,4 +1,5 @@
 <!--components/tab/index.wxml-->
-<view class="tab" wx:if="{{active}}">
+<!-- <view class="tab" wx:if="{{active}}"> -->
+<view class="tab" style="{{'width:' + width}}">
   <slot></slot>
 </view>
