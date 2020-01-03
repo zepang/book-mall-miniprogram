@@ -1,0 +1,15 @@
+<!--components/swiper/swiper.wxml-->
+<view class="page-section page-section-spacing swiper">
+  <swiper 
+    indicator-dots="{{indicatorDots}}"
+    indicator-active-color="{{indicatorActiveColor}}"
+    autoplay="{{autoplay}}" 
+    interval="{{interval}}" 
+    duration="{{duration}}">
+    <block wx:for="{{background}}" wx:key="*this">
+      <swiper-item>
+        <view class="swiper-item {{item}}"></view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

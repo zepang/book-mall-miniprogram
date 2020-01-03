@@ -18,9 +18,12 @@ Page({
    */
   onLoad: function (options) {
     // 设置激活的tab标签页
-    this.setData({
-      tabIndex: Number(options.active)
-    })
+    if (options.active) {
+      this.setData({
+        tabIndex: Number(options.active)
+      })
+    }
+    
     // 获取用户信息
     wx.getSetting({
       success: res => {

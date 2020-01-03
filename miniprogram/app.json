@@ -1,6 +1,5 @@
 {
   "pages": [
-    "pages/recipe/recipe",
     "pages/home/home",
     "pages/index/index",
     "pages/chooseLib/chooseLib",

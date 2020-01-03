@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "tab-bar": "/components/tab-bar/index",
-    "recipe-list": "/components/recipes/index"
+    "swiper": "/components/swiper/swiper",
+    "van-search": "vant-weapp/search/index"
   }
 }

@@ -6,14 +6,12 @@
   </block>
 
   <block wx:elif="{{tabIndex === 1}}">
-    <view class="header">
-      <image class="logo" src="{{url.logo}}"></image>
-      <text>scratch</text>
-      <image class="notification" src="{{url.notification}}"></image>
-      <image class="message" src="{{url.message}}"></image>
-    </view>
+    <van-search
+      value="{{ value }}"
+      placeholder="请输入搜索关键词"
+    />
 
-    <recipe-list></recipe-list>
+    <swiper></swiper>
   </block>
 
   <block wx:else="{{tabIndex === 2}}">

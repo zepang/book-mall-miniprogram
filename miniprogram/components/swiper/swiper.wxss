@@ -1,0 +1,32 @@
+/* components/swiper/swiper.wxss */
+.swiper-item {
+  display: block;
+  height: 150px;
+}
+
+.demo-text-1 {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #1AAD19;
+  color: #FFFFFF;
+  font-size: 18px;
+}
+
+.demo-text-2 {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #2782D7;
+  color: #FFFFFF;
+  font-size: 18px;
+}
+
+.demo-text-3 {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #e91e63;
+  color: #FFFFFF;
+  font-size: 18px;
+}
