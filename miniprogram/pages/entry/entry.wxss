@@ -1,0 +1,6 @@
+/* miniprogram/pages/home/home.wxss */
+
+.page {
+  padding: 40rpx 0;
+}
+

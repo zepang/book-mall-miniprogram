@@ -1,49 +1,33 @@
 <!--miniprogram/pages/home/home.wxml-->
-<!-- <text>miniprogram/pages/home/home.wxml</text> -->
-<view class="page">
-  <block wx:if="{{tabIndex === 0}}">
-    <text>0</text>
-  </block>
 
-  <block wx:elif="{{tabIndex === 1}}">
-    <scroll-view
-      class="home-page"
-      scroll-y="true"
-      scroll-with-animation="true"
-      bindscrolltolower="onScrollToLower">
+<scroll-view
+  class="home-page"
+  scroll-y="true"
+  scroll-with-animation="true"
+  bindscrolltolower="onScrollToLower">
 
-      <!-- 搜索按钮 -->
-      <van-search
-        value="{{ value }}"
-        placeholder="请输入搜索关键词"
-      />
+  <!-- 搜索按钮 -->
+  <van-search
+    value="{{ value }}"
+    placeholder="请输入搜索关键词"
+  />
 
-      <!-- 轮播 -->
-      <swiper></swiper>
+  <!-- 轮播 -->
+  <swiper></swiper>
 
-      <!-- 筛选排序下拉菜单 -->
-      <van-sticky>
-        <van-dropdown-menu>
-          <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" />
-          <van-dropdown-item value="{{ value2 }}" options="{{ option2 }}" />
-        </van-dropdown-menu>
-      </van-sticky>
+  <!-- 筛选排序下拉菜单 -->
+  <van-sticky>
+    <van-dropdown-menu>
+      <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" />
+      <van-dropdown-item value="{{ value2 }}" options="{{ option2 }}" />
+    </van-dropdown-menu>
+  </van-sticky>
 
-      <!-- 书籍列表 -->
-      <book-list></book-list>
+  <!-- 书籍列表 -->
+  <book-list></book-list>
 
-      <!-- loading 提示 -->
-      <view class="loading" wx:if="{{isLoading}}">
-        <van-loading type="spinner" />
-      </view>
-    </scroll-view>
-  </block>
-
-  <block wx:else="{{tabIndex === 2}}">
-    <text>2</text>
-  </block>
-</view>
-
-
-<tab-bar bind:switch-tab="switchTab" selected="{{tabIndex}}"></tab-bar>
-
+  <!-- loading 提示 -->
+  <view class="loading" wx:if="{{isLoading}}">
+    <van-loading type="spinner" />
+  </view>
+</scroll-view>

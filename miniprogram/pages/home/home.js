@@ -18,53 +18,13 @@ Page({
     value1: 0,
     value2: 'a',
     isLoading: false,
-    tabIndex: 1,
-    url: {
-      logo: '../../images/Logo.png',
-      notification: '../../images/Notifications.png',
-      message: '../../images/Messages.png',
-    }
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    // 设置激活的tab标签页
-    if (options.active) {
-      this.setData({
-        tabIndex: Number(options.active)
-      })
-    }
-    
-    // 获取用户信息
-    wx.getSetting({
-      success: res => {
-        if (res.authSetting['scope.userInfo']) {
-          // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
-          wx.getUserInfo({
-            success: res => {
-              // console.log(res)
-              this.setData({
-                avatarUrl: res.userInfo.avatarUrl,
-                userInfo: res.userInfo
-              })
-            }
-          })
-        } else {
-          console.log('aaa')
-          wx.authorize({
-            scope: 'scope.userInfo',
-            success: res => {
-              console.log(res)
-            },
-            fail: error => {
-              console.log(error)
-            }
-          })
-        }
-      }
-    })
+
   },
 
   /**
@@ -78,8 +38,8 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    // console.log(this.getTabBar)
-  },  
+
+  },
 
   /**
    * 生命周期函数--监听页面隐藏
@@ -117,14 +77,8 @@ Page({
   },
 
   /**
-   * 自定义事件
+   * scrolle-view下拉加载更多
    */
-  switchTab: function (data) {
-    this.setData({
-      tabIndex: data.detail
-    })
-  },
-
   onScrollToLower: function (event) {
     console.log(event)
     this.setData({

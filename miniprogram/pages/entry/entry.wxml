@@ -1,0 +1,19 @@
+<!--miniprogram/pages/home/home.wxml-->
+<!-- <text>miniprogram/pages/home/home.wxml</text> -->
+<view class="page">
+  <block wx:if="{{tabIndex === 0}}">
+    <text>0</text>
+  </block>
+
+  <block wx:elif="{{tabIndex === 1}}">
+    <home-page></home-page>
+  </block>
+
+  <block wx:else="{{tabIndex === 2}}">
+    <text>2</text>
+  </block>
+</view>
+
+
+<tab-bar bind:switch-tab="switchTab" selected="{{tabIndex}}"></tab-bar>
+
