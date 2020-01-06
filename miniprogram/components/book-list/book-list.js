@@ -28,9 +28,7 @@ Component({
 
       this.setData({
         list: [book, book, book, book, book]
-      })
-      
-      console.log(this)
+      }) 
     }
   },
 
@@ -38,6 +36,14 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    /**
+     * 跳转至详情页面
+     */
+    navToDetail: function (event) {
+      let id = event.currentTarget.dataset.name
+      wx.navigateTo({
+        url: `/pages/book-detail/book-detail?id=${id}`
+      })
+    }
   }
 })

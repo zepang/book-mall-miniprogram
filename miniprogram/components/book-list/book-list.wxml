@@ -1,6 +1,6 @@
 <!--components/book-list/book-list.wxml-->
 <view class="book-list">
-  <view class="book" wx:for="{{list}}" wx:key="index">
+  <view class="book" wx:for="{{list}}" wx:key="index" bindtap="navToDetail" data-name="{{item.name}}">
     <image class="cover" src="{{item.cover}}"></image>
     <view class="info">
       <view class="top">

@@ -1,0 +1,25 @@
+<!--miniprogram/pages/book-detail/book-detail.wxml-->
+<view class="book-detail-page">
+  <!-- 封面 -->
+  <image class="cover" src=""></image>
+
+  <!-- 基本信息 -->
+  <view class="info">
+    <text class="name">{{book.name}}</text>
+    <text class="author">By {{book.author}}</text>
+    <text class="date">{{book.updatedAt}}</text>
+  </view>
+
+  <!-- tags -->
+  <view class="tags">
+    <text wx:for="{{book.tags}}" wx:key="index">{{item}}</text>
+  </view>
+
+  <!-- 内容介绍 -->
+  <view class="description-wrapper">
+    <text>Descrition</text>
+    <rich-text class="description" nodes="{{book.description}}"></rich-text>
+  </view>
+
+  <button type="warn">加入订阅清单</button>
+</view>
