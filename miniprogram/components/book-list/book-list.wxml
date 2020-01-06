@@ -1,0 +1,16 @@
+<!--components/book-list/book-list.wxml-->
+<view class="book-list">
+  <view class="book" wx:for="{{list}}" wx:key="index">
+    <image class="cover" src="{{item.cover}}"></image>
+    <view class="info">
+      <view class="top">
+        <text class="name">{{item.name}}</text>
+        <text class="author">作者：{{item.author}}</text>
+      </view>
+      <view class="bottom">
+        <text class="date">{{item.updatedAt}}</text>
+        <text class="other">查看数量：{{item.view}}</text>
+      </view>
+    </view>
+  </view>
+</view>

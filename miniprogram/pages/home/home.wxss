@@ -2,7 +2,17 @@
 
 .page {
   padding: 40rpx 0;
-  margin-bottom: 120rpx;
+}
+
+.home-page {
+  height: calc(100vh - 120rpx);
+  padding-bottom: 40rpx;
+  box-sizing: border-box;
+}
+
+.home-page .loading {
+  display: flex;
+  justify-content: center;
 }
 
 .header {

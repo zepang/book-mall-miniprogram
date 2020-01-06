@@ -1,0 +1,40 @@
+/* components/book-list/book-list.wxss */
+
+.book {
+  padding: 32rpx;
+  display: flex;
+}
+
+.book image {
+  width: 180rpx;
+  height: 220rpx;
+  background-color: #ddd;
+}
+
+.book .info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 20rpx;
+
+}
+
+.info .bottom {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 36rpx;
+}
+
+.info .top text {
+  display: block;
+}
+
+.top .name {
+  
+}
+
+.top .author {
+  margin-top: 20rpx;
+}

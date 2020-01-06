@@ -2,6 +2,11 @@
   "usingComponents": {
     "tab-bar": "/components/tab-bar/index",
     "swiper": "/components/swiper/swiper",
-    "van-search": "vant-weapp/search/index"
+    "book-list": "/components/book-list/book-list",
+    "van-search": "@vant/weapp/search/index",
+    "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
+    "van-dropdown-item": "@vant/weapp/dropdown-item/index",
+    "van-sticky": "@vant/weapp/sticky/index",
+    "van-loading": "@vant/weapp/loading/index"
   }
 }
