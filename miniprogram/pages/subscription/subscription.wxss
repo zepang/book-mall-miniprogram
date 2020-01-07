@@ -1,1 +1,46 @@
-/* miniprogram/pages/subscription/subscription.wxss */
+/* pages/subscription/subscription.wxss */
+.subscription-page {
+  height: calc(100vh - 120rpx);
+  padding-bottom: 40rpx;
+  box-sizing: border-box;
+  background-color: #f7f8fa;
+}
+
+.book {
+  display: flex;
+  height: 220rpx;
+  padding-right: 32rpx;
+  background-color: #fff;
+}
+
+.book image {
+  min-width: 180rpx;
+  max-width: 180rpx;
+  height: 220rpx;
+  margin-right: 32rpx;
+  background-color: #ddd;
+}
+
+.book .info .name {
+  font-weight: bold;
+}
+
+.book .info .author,
+.book .info .date {
+  font-size: 32rpx;
+  font-style: italic;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  align-content: center;
+}
+
+.list .delete {
+  width: 65px;
+  height: 100%;
+
+  text-align: center;
+  line-height: 240rpx;
+  color: #ee0a24;
+}

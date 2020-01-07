@@ -10,7 +10,7 @@ Page({
     recommends: [],
     book: {
       id: 1,
-      name: 'Java All-in-One For Dummies, 3rd Edition',
+      name: 'Java All-in-One For Dummies, 3rd Edition, 3rd Edition',
       author: 'Doug Lowe',
       updatedAt: '2019-10-22',
       tags: ['computer', 'technology'],

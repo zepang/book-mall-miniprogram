@@ -1,2 +1,23 @@
-<!--miniprogram/pages/subscription/subscription.wxml-->
-<text>miniprogram/pages/subscription/subscription.wxml</text>
+<!--pages/subscription/subscription.wxml-->
+
+<scroll-view
+  class="subscription-page"
+  scroll-y="true"
+  scroll-with-animation="true">
+  <van-cell-group class="list" title="订阅清单列表">
+    <!-- 清单列表 -->
+    <van-swipe-cell right-width="{{65}}" wx:for="{{subscription}}" wx:key="index">
+      <van-cell center="true">
+        <view class="book" slot="title">
+          <image src=""></image>
+          <view class="info">
+            <text class="name">{{item.name}}</text>
+            <text class="author"> By {{item.author}}</text>
+            <text class="date"> At {{item.updatedAt}}</text>
+          </view>
+        </view>
+      </van-cell>
+      <view slot="right" data-id="{{item.id}}" bindtap="deleteSubscription" class="delete">删除</view>
+    </van-swipe-cell>
+  </van-cell-group>
+</scroll-view>

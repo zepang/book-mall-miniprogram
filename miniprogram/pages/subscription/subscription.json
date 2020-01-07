@@ -1,3 +1,9 @@
 {
-  "usingComponents": {}
+  "component": true,
+  "usingComponents": {
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-checkbox": "@vant/weapp/checkbox/index",
+    "van-swipe-cell": "@vant/weapp/swipe-cell/index"
+  }
 }
