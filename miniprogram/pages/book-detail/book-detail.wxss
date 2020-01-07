@@ -15,7 +15,7 @@
 
 .book-detail-page .description-wrapper {
   margin-top: 40rpx;
-  line-height: 2em;
+  margin-bottom: 80rpx;
 }
 
 .info text {
@@ -53,6 +53,9 @@
 
 .description-wrapper .description {
   display: block;
+  padding: 0 40rpx;
+  text-align: justify;
+  line-height: 1.6em;
   font-size: 34rpx;
 }
 
