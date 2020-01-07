@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/book-detail/book-detail",
     "pages/entry/entry",
+    "pages/book-detail/book-detail",
     "pages/index/index",
     "pages/chooseLib/chooseLib",
     "pages/userConsole/userConsole",
@@ -9,7 +9,8 @@
     "pages/databaseGuide/databaseGuide",
     "pages/addFunction/addFunction",
     "pages/deployFunctions/deployFunctions",
-    "pages/home/home"
+    "pages/home/home",
+    "pages/subscription/subscription"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

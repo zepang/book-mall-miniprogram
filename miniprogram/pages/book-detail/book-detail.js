@@ -5,8 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
+    isSubscribed: false,
+    subscription: [],
     recommends: [],
     book: {
+      id: 1,
       name: 'Java All-in-One For Dummies, 3rd Edition',
       author: 'Doug Lowe',
       updatedAt: '2019-10-22',
@@ -34,6 +37,7 @@ Page({
    */
   onShow: function () {
     let book = {
+      id: 1,
       name: 'Java All-in-One For Dummies, 3rd Edition',
       author: 'author of book',
       updatedAt: '2019-10-22',
@@ -42,7 +46,8 @@ Page({
 
     this.setData({
       recommends: [book, book, book, book, book]
-    }) 
+    })
+    this.checkSubscription()
   },
 
   /**
@@ -78,5 +83,48 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  /**
+   * 简单当前书籍是否存在订阅清单中
+   */
+  checkSubscription: function () {
+    try {
+      let list = wx.getStorageSync('subscription')
+      if (list) {
+        list = JSON.parse(list)
+        this.setData({
+          subscription: list,
+          isSubscribed: list.some(item => item.id === this.data.book.id)
+        })
+      }
+    } catch (e) {
+
+    }
+  },
+  /**
+   * 加入订阅清单
+   */
+  subscribe: function () {
+    let book = {}
+    for (let key in this.data.book) {
+      if (key !== 'description') {
+        book[key] = this.data.book[key]
+      }
+    }
+
+    console.log(this)
+
+    this.setData({
+      subscription: this.data.subscription.concat([book])
+    })
+
+    try {
+      wx.setStorageSync('subscription', JSON.stringify(this.data.subscription))
+      this.setData({
+        isSubscribed: true
+      })
+    } catch (e) {
+
+    }
   }
 })
