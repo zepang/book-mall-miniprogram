@@ -20,8 +20,8 @@ Component({
   lifetimes: {
     attached: function () {
       let book = {
-        name: 'name of book',
-        author: 'author of book',
+        name: 'Java All-in-One For Dummies, 3rd Edition',
+        author: 'Doug Lowe',
         updatedAt: '2019-10-22',
         view: 123
       }

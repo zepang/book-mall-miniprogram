@@ -27,8 +27,9 @@
   font-size: 36rpx;
 }
 
-.info .top text {
-  display: block;
+.info .top .author {
+  font-size: 32rpx;
+  font-style: italic;
 }
 
 .top .name {
