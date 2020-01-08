@@ -2,6 +2,7 @@
   "usingComponents": {
     "tab-bar": "/components/tab-bar/index",
     "home-page": "/pages/home/home",
-    "subscription-page": "/pages/subscription/subscription"
+    "subscription-page": "/pages/subscription/subscription",
+    "user-page": "/pages/user/user"
   }
 }

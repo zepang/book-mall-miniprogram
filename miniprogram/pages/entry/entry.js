@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    tabIndex: 0,
+    tabIndex: 2,
     url: {
       logo: '../../images/Logo.png',
       notification: '../../images/Notifications.png',

@@ -1,0 +1,69 @@
+/* miniprogram/pages/user/user.wxss */
+.user-page {
+  height: calc(100vh - 120rpx);
+  padding-bottom: 40rpx;
+  box-sizing: border-box;
+  background-color: #f7f8fa;
+}
+
+.user-page__header {
+  position: relative;
+}
+
+.user-page__header .bg {
+  height: 260rpx;
+
+  background-color: #ddd;
+  border-bottom: 8rpx solid #fff;
+  box-shadow: 0px 1px 4px #ddd;
+}
+
+.user-page__header 
+
+.avatar {
+  position: absolute;
+  z-index: 99;
+  left: 50%;
+  margin-top: -140rpx;
+  transform: translateX(-50%);
+}
+
+.avatar button {
+  height: 160rpx;
+  width: 160rpx;
+
+  border-radius: 50%;
+  border: 8rpx solid #fff;
+  box-shadow: 0px 1px 4px #ddd;
+
+  line-height: 140rpx;
+}
+
+.avatar image {
+  height: 160rpx;
+  width: 160rpx;
+
+  background-color: #ddd;
+  border-radius: 50%;
+  border: 8rpx solid #fff;
+  box-shadow: 0px 1px 4px #ddd;
+}
+
+.user-page__body {
+  position: relative;
+}
+
+.user-page__body .item text {
+  color: #616263;
+}
+
+.user-page__body .mask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, .9);
+}
+

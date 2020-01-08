@@ -1,0 +1,35 @@
+<!--miniprogram/pages/user/user.wxml-->
+<view class="user-page">
+  <view class="user-page__header">
+    <image src="/images/timg.jpeg" class="bg"></image>
+    <view class="avatar">
+      <image wx:if="{{isLogin}}" src=""></image>
+      <button wx:else type="primary" size="mini">登录</button>
+    </view>
+  
+  </view>
+  <view class="user-page__body">
+    <van-cell>
+      <view slot="title" class="item">
+        用户：<text>zepang</text>
+      </view>
+    </van-cell>
+    <van-cell>
+      <view slot="title" class="item">
+        注册日期：<text>2019-10-22</text>
+      </view>
+    </van-cell>
+    <van-cell is-link>
+      <view slot="title" class="item">
+        邮箱：<text>zepang@gmail.com</text>
+      </view>
+    </van-cell>
+    <van-cell is-link>
+      <view slot="title" class="item">
+        订阅记录
+      </view>
+    </van-cell>
+
+    <view class="mask"></view>
+  </view>
+</view>

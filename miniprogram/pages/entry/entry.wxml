@@ -10,7 +10,7 @@
   </block>
 
   <block wx:else="{{tabIndex === 2}}">
-    <text>2</text>
+    <user-page></user-page>
   </block>
 </view>
 

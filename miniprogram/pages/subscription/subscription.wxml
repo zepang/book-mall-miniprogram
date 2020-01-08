@@ -21,7 +21,7 @@
     </van-swipe-cell>
   </van-cell-group>
   <view class="submit-bar">
-    <view class="title">消耗<text>1</text>积分</view>
+    <view class="title">消耗<text>1</text>积分</view> 
     <button type="warn" bindtap="subscribe" disabled="{{!subscription.length}}" bindtap="subscribe">订阅</button>
   </view>
 </scroll-view>
