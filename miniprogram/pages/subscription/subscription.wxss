@@ -44,3 +44,34 @@
   line-height: 240rpx;
   color: #ee0a24;
 }
+
+
+.submit-bar {
+  width: 100%;
+  position: fixed;
+  bottom: 120rpx;
+  display: flex;
+  align-content: center;
+
+  background-color: #fff;
+}
+
+.submit-bar .title {
+  min-width: 50%;
+
+  text-align: center;
+  line-height: 46px;
+  font-size: 32rpx;
+  color: #727374;
+}
+
+.submit-bar .title text {
+  color: #CE3C39;
+  font-weight: bolder;
+  font-size: 36rpx;
+}
+
+.submit-bar button {
+  border-radius: 0px;
+  min-width: 50%;
+}
