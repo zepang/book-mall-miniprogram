@@ -13,7 +13,7 @@
 .user-page__header .bg {
   height: 260rpx;
 
-  background-color: #ddd;
+  background-color: #09BB07;
   border-bottom: 8rpx solid #fff;
   box-shadow: 0px 1px 4px #ddd;
 }

@@ -1,7 +1,7 @@
 <!--miniprogram/pages/user/user.wxml-->
 <view class="user-page">
   <view class="user-page__header">
-    <image src="/images/timg.jpeg" class="bg"></image>
+    <image src="" class="bg"></image>
     <view class="avatar">
       <image src="{{avatarUrl}}"></image>
     </view>
