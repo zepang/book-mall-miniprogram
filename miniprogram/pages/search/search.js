@@ -1,23 +1,12 @@
-// miniprogram/pages/home/home.js
+// miniprogram/pages/search/search.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    option1: [
-      { text: '全部商品', value: 0 },
-      { text: '推荐书籍', value: 1 },
-      { text: '查看最多', value: 2 }
-    ],
-    option2: [
-      { text: '默认排序', value: 'a' },
-      { text: '创建时间', value: 'b' },
-      { text: '发布时间', value: 'c' }
-    ],
-    value1: 0,
-    value2: 'a',
-    isLoading: false,
+    value: '',
+    isLoading: false
   },
 
   /**
@@ -75,10 +64,9 @@ Page({
   onShareAppMessage: function () {
 
   },
-
   /**
-   * scrolle-view下拉加载更多
-   */
+  * scrolle-view下拉加载更多
+  */
   onScrollToLower: function (event) {
     console.log(event)
     this.setData({
@@ -90,9 +78,4 @@ Page({
       })
     }, 2000)
   },
-  navToSearch: function () {
-    wx.navigateTo({
-      url: '/pages/search/search'
-    })
-  }
 })

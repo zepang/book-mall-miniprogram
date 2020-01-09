@@ -9,4 +9,5 @@
 .home-page .loading {
   display: flex;
   justify-content: center;
+  padding: 20rpx 0;
 }

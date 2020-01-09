@@ -1,0 +1,21 @@
+<!--miniprogram/pages/search/search.wxml-->
+<scroll-view
+  class="search-page"
+  scroll-y="true"
+  scroll-with-animation="true"
+  bindscrolltolower="onScrollToLower">
+  <!-- 搜索输入框 -->
+  <van-search
+    value="{{ value }}"
+    placeholder="请输入搜索关键词"
+    bind:search="onSearch"
+  />
+
+  <!-- 书籍列表 -->
+  <book-list></book-list>
+
+  <!-- loading 提示 -->
+  <view class="loading" wx:if="{{isLoading}}">
+    <van-loading size="36rpx" type="spinner">加载中...</van-loading>
+  </view>
+</scroll-view>

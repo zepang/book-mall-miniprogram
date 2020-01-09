@@ -10,6 +10,7 @@
   <van-search
     value="{{ value }}"
     placeholder="请输入搜索关键词"
+    bindtap="navToSearch"
   />
 
   <!-- 轮播 -->
@@ -28,6 +29,6 @@
 
   <!-- loading 提示 -->
   <view class="loading" wx:if="{{isLoading}}">
-    <van-loading type="spinner" />
+    <van-loading size="36rpx" type="spinner">加载中...</van-loading>
   </view>
 </scroll-view>

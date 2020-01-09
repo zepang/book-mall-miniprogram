@@ -1,0 +1,11 @@
+/* miniprogram/pages/search/search.wxss */
+.search-page {
+  height: 100vh;
+  background-color: #f7f8fa;
+}
+
+.search-page .loading {
+  display: flex;
+  justify-content: center;
+  padding: 20rpx 0;
+}
