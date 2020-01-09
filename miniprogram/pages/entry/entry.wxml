@@ -10,7 +10,7 @@
   </block>
 
   <block wx:else="{{tabIndex === 2}}">
-    <user-page></user-page>
+    <user-page avatarUrl="{{avatarUrl}}" userInfo="{{userInfo}}"></user-page>
   </block>
 </view>
 

@@ -1,66 +1,111 @@
 // miniprogram/pages/user/user.js
-Page({
+const app = getApp()
+
+Component({
 
   /**
    * 页面的初始数据
    */
   data: {
-    isLogin: false
+    avatar: '',
+    userInfo: {},
+    loginInfo: {
+      email: 'xxxx@xxxx.xxx',
+      createdAt: 'YYYY-MM-DD'
+    },
+    isLogin: false,
+    user: {}
   },
-
   /**
-   * 生命周期函数--监听页面加载
+   * 组件的属性列表
    */
-  onLoad: function (options) {
-
+  properties: {
+    avatarUrl: String,
+    userInfo: Object
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  lifetimes: {
+    attached: function () {
+      console.log(this.data.avatarUrl)
+      this.checkLoginStatus()
+    }
   },
+  methods: {
+    formatDate: function (date) {
+      if (Object.prototype.toString.call(date) === '[object Date]') {
+        return date.getFullYear() + '/' + (date.getMonth() + 1) + '/' + date.getDate()
+      }
+      return date
+    },
+    checkLoginStatus: function () {
+      try {
+        let id = wx.getStorageSync('_id')
+        let db = wx.cloud.database()
+        const self = this
 
-  /**
-   * 生命周期函数--监听页面显示
+        db.collection('users').doc(id).get().then(res => {
+          res.data.createdAt = this.formatDate(res.data.createdAt)
+          this.setData({
+            isLogin: true,
+            loginInfo: res.data
+          })
+        }).catch(e => {
+          this.setData({
+            isLogin: false
+          })
+        })
+
+      } catch (e) {
+
+      }
+    },
+    /**
+   * 获取openid
    */
-  onShow: function () {
+    onGetOpenid: function () {
+      const self = this
+      // 调用云函数
+      wx.cloud.callFunction({
+        name: 'login',
+        data: {},
+        success: res => {
+          console.log(res)
+          console.log('[云函数] [login] user openid: ', res.result.openid)
+          app.globalData.openid = res.result.openid
+          self.setData({
+            isLogin: true
+          })
+          self.register(res.result.openid)
+        },
+        fail: err => {
+          console.error('[云函数] [login] 调用失败', err)
+          wx.navigateTo({
+            url: '../deployFunctions/deployFunctions',
+          })
+        }
+      })
+    },
+    register: function (openid) {
+      const db = wx.cloud.database()
 
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+      return db.collection('users').where({
+        _openid: openid
+      })
+      .get()
+        .then(res => {
+          if (!res.data.length) {
+            return db.collection('users').add({
+              data: {
+                createdAt: new Date(),
+                email: ''
+              }
+            }).then(res => {
+              wx.setStorageSync('_id', res._id)
+              return res
+            }).catch(error => {
+              console.log(error)
+            })
+          }
+        })
+    }
   }
 })

@@ -28,17 +28,6 @@
   transform: translateX(-50%);
 }
 
-.avatar button {
-  height: 160rpx;
-  width: 160rpx;
-
-  border-radius: 50%;
-  border: 8rpx solid #fff;
-  box-shadow: 0px 1px 4px #ddd;
-
-  line-height: 140rpx;
-}
-
 .avatar image {
   height: 160rpx;
   width: 160rpx;
@@ -50,7 +39,10 @@
 }
 
 .user-page__body {
+  margin-top: 40rpx;
   position: relative;
+  box-shadow: 0px 1px 4px #ddd;
+  background-color: #fff;
 }
 
 .user-page__body .item text {
@@ -65,5 +57,12 @@
   left: 0;
   z-index: 10;
   background-color: rgba(255, 255, 255, .9);
+}
+
+.user-page__body .mask button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 

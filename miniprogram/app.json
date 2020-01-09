@@ -1,9 +1,9 @@
 {
   "pages": [
     "pages/entry/entry",
+    "pages/index/index",
     "pages/user/user",
     "pages/book-detail/book-detail",
-    "pages/index/index",
     "pages/chooseLib/chooseLib",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
