@@ -8,7 +8,7 @@ Page({
   data: {
     avatarUrl: '',
     userInfo: {},
-    tabIndex: 2,
+    tabIndex: 1,
     url: {
       logo: '../../images/Logo.png',
       notification: '../../images/Notifications.png',
