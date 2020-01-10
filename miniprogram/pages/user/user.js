@@ -10,7 +10,7 @@ Page({
     avatar: '',
     userInfo: {},
     loginInfo: {
-      email: 'xxxx@xxxx.xxx',
+      email: '',
       createdAt: 'YYYY-MM-DD'
     },
     isLogin: false,
@@ -79,7 +79,6 @@ Page({
   },
   register: function (openid) {
     const db = wx.cloud.database()
-
     return db.collection('users').where({
       _openid: openid
     })
@@ -93,10 +92,13 @@ Page({
             }
           }).then(res => {
             wx.setStorageSync('_id', res._id)
+            console.log(res._id)
             return res
           }).catch(error => {
             console.log(error)
           })
+        } else {
+          wx.setStorageSync('_id', res.data[0]._id)
         }
       })
   }

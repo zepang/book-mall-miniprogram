@@ -1,0 +1,32 @@
+/* miniprogram/pages/email/email.wxss */
+.email-page {
+  height: 100vh;
+  background-color: #f7f8fA;
+}
+
+.email-row {
+  display: flex;
+  padding: 32rpx;
+  background-color: #fff;
+}
+
+.email-input {
+  display: inline-block;
+  box-sizing: border-box;
+  min-width: 0;
+  height: 80rpx;
+  margin-right: 32rpx;
+  padding: 0 32rpx;
+  background-color: #f7f8fA;
+  border-radius: 8rpx;
+
+  color: #323233;
+  text-align: left;
+  flex: 1;
+  resize: none;
+}
+
+button {
+  display: inline-block;
+  width: 180rpx;
+}

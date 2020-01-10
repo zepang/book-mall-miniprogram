@@ -1,0 +1,6 @@
+<!--miniprogram/pages/email/email.wxml-->
+<view class="email-page">
+  <view class="email-row">
+    <input class="email-input" value="{{value}}" placeholder="邮箱地址" bindconfirm="submit"></input>
+  </view>
+</view>

@@ -5,7 +5,7 @@
   <view class="user-page__header">
     <image src="" class="bg"></image>
     <view class="avatar">
-      <image src="{{avatarUrl}}"></image>
+      <image src="{{userInfo.avatarUrl}}"></image>
     </view>
   
   </view>
@@ -20,10 +20,10 @@
         入驻日期：<text>{{util.formatDate(loginInfo.createdAt)}}</text>
       </view>
     </van-cell>
-    <van-cell is-link>
+    <van-cell is-link url="{{'/pages/email/email?email=' + loginInfo.email}}">
       <view slot="title" class="item">
         邮箱：
-        <text wx:if="{{loginInfo.email}}">{{loginInfo.email}}</text>
+        <text wx:if="{{loginInfo.email}}">{{loginInfo.email || 'xxxx@xxxx.xxx'}}</text>
         <text wx:else style="color: red">添加邮箱</text>
       </view>
     </van-cell>
