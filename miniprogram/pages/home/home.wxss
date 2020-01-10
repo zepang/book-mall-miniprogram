@@ -1,8 +1,7 @@
 /* miniprogram/pages/home/home.wxss */
 
 .home-page {
-  height: calc(100vh - 120rpx);
-  padding-bottom: 40rpx;
+  height: 100vh;
   box-sizing: border-box;
 }
 

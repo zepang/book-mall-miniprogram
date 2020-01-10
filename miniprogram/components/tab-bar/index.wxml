@@ -5,4 +5,4 @@
     <!-- <cover-image src="{{selected === index ? item.selectedIconPath : item.iconPath}}"></cover-image> -->
     <van-icon name="{{ selected === index ? item.selectedIcon : item.icon }}" size="1.6em" class="{{selected === index ? 'active icon' : 'icon'}}"/>
   </view>
-</cover-view>
+  </cover-view>

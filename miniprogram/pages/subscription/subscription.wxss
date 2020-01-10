@@ -1,7 +1,6 @@
 /* pages/subscription/subscription.wxss */
 .subscription-page {
-  height: calc(100vh - 120rpx);
-  padding-bottom: 40rpx;
+  height: 100vh;
   box-sizing: border-box;
   background-color: #f7f8fa;
 }
@@ -49,7 +48,7 @@
 .submit-bar {
   width: 100%;
   position: fixed;
-  bottom: 120rpx;
+  bottom: 0rpx;
   display: flex;
   align-content: center;
 

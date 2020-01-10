@@ -1,21 +1,19 @@
 /* miniprogram/pages/user/user.wxss */
 .user-page {
-  height: calc(100vh - 120rpx);
-  padding-bottom: 40rpx;
+  height: 100vh;
   box-sizing: border-box;
   background-color: #f7f8fa;
 }
 
 .user-page__header {
   position: relative;
+  background-color: #09BB07;
+  box-shadow: 0px 1px 4px #ddd;
+  border-bottom: 8rpx solid #fff;
 }
 
 .user-page__header .bg {
-  height: 260rpx;
-
-  background-color: #09BB07;
-  border-bottom: 8rpx solid #fff;
-  box-shadow: 0px 1px 4px #ddd;
+  height: 260rpx;  
 }
 
 .user-page__header 

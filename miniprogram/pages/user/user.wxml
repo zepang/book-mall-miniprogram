@@ -1,4 +1,6 @@
 <!--miniprogram/pages/user/user.wxml-->
+<wxs module="util" src="../../wxs/util.wxs"></wxs>
+
 <view class="user-page">
   <view class="user-page__header">
     <image src="" class="bg"></image>
@@ -15,7 +17,7 @@
     </van-cell>
     <van-cell>
       <view slot="title" class="item">
-        入驻日期：<text>{{loginInfo.createdAt}}</text>
+        入驻日期：<text>{{util.formatDate(loginInfo.createdAt)}}</text>
       </view>
     </van-cell>
     <van-cell is-link>

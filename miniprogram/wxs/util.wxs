@@ -1,0 +1,12 @@
+function formatDate(time) {
+  var date= getDate(time)
+  if (date === 'Invalid Date') {
+    return time
+  } else {
+    return date.getFullYear() + '/' + (date.getMonth() + 1) + '/' + date.getDate()
+  }
+}
+
+module.exports = {
+  formatDate: formatDate
+}
